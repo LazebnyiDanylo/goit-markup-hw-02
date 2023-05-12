@@ -1,57 +1,108 @@
 :root {
-  --body-color: #434455;
-  --unique-color: #2e2f42;
-  --unique-background-color: #2e2f42;
-  --white: #fff;
+  --first-text-color: #434455;
+  --second-text-color: #f4f4fd;
+  --first-title-color: #2e2f42;
+  --second-title-color: #ffffff;
+  --first-button-color: #ffffff;
+  --second-button-color: #4d5ae5;
+  --hover-color: #404bbf;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: var(--body-color);
+  color: var(--first-text-color);
 }
-.header {
-  background-color: var(--white);
+
+.text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
 }
+
+.title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
 .logo {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  display: flex;
-  align-items: center;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
-  color: var(--unique-color);
+  color: var(--first-title-color);
 }
-.header-navigation {
+
+.logo-part {
+  color: var(--second-button-color);
+}
+
+.header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--unique-color);
+  color: var(--first-title-color);
 }
-.address {
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover-color);
+}
+
+.address-link {
   font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--body-color);
+  color: var(--first-text-color);
 }
-.hero {
-  background-color: var(--unique-background-color);
+
+.footer-text {
+  color: var(--second-text-color);
 }
+
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
-  color: var(--white);
+  color: var(--second-title-color);
 }
+
 .hero-button {
+  color: var(--first-button-color);
+}
+
+.filter-button {
+  color: var(--second-button-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--first-button-color);
 }
